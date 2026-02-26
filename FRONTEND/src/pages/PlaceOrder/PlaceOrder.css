@@ -1,0 +1,222 @@
+.place-order {
+  display: flex;
+  justify-content: space-between;
+  gap: 200px; /* more distance between columns */
+  margin: 100px 0;
+  padding: 0 15vw;
+}
+
+.place-order-left {
+  flex: 0 0 40%; /* fix left side at 40% of container */
+}
+
+.place-order-left .title {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.place-order-left form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.place-order-left form input {
+  padding: 12px 15px;
+  border: 1px solid #c5c5c5;
+  border-radius: 4px;
+  font-family: Outfit;
+  color: #808080;
+  font-size: 14px;
+}
+
+.place-order-left form input:focus {
+  outline: none;
+  border-color: #ff6347;
+}
+
+.multi-fields {
+  display: flex;
+  gap: 10px;
+}
+
+.multi-fields input {
+  flex: 1;
+}
+
+.place-order-right {
+  flex: 0 0 55%; /* right panel takes majority width */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.place-order-right .cart-total {
+  flex: 1;
+  width: 100%;
+  max-width: 420px; /* prevents the box from being too narrow on wide screens */
+  display: flex;
+  flex-direction: column;
+  gap: 24px; /* extra space between the header, lines, and button */
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.place-order-right .cart-total h2 {
+  color: #262626;
+}
+
+.place-order-right .cart-total-details {
+  display: flex;
+  justify-content: space-between;
+  color: #555;
+  font-size: 16px;
+  margin-bottom: 12px; /* add breathing room between each row */
+}
+
+.place-order-right .cart-total-details b {
+  color: black;
+  font-size: 18px;
+}
+
+.place-order-btn {
+  border: none;
+  background-color: #ff6347;
+  color: white;
+  width: 100%;
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: auto;
+}
+
+.place-order-btn:hover {
+  background-color: #e55339;
+}
+
+/* Tablet screens (768px and below) */
+@media (max-width: 768px) {
+  .place-order {
+    flex-direction: column;
+    gap: 40px;
+    padding: 0 20px;
+    margin: 80px 0;
+  }
+
+  .place-order-left .title {
+    font-size: 24px;
+  }
+
+  .place-order-left form input {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+
+  .place-order-right .cart-total {
+    padding: 15px;
+    gap: 15px;
+  }
+
+  .place-order-right .cart-total h2 {
+    font-size: 20px;
+  }
+
+  .place-order-btn {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+}
+
+/* Mobile screens (600px and below) */
+@media (max-width: 600px) {
+  .place-order {
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 15px;
+    margin: 60px 0;
+  }
+
+  .place-order-left .title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .place-order-left form {
+    gap: 12px;
+  }
+
+  .place-order-left form input {
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  .multi-fields {
+    gap: 8px;
+  }
+
+  .place-order-right .cart-total {
+    padding: 15px;
+    gap: 12px;
+  }
+
+  .place-order-right .cart-total h2 {
+    font-size: 18px;
+  }
+
+  .place-order-right .cart-total-details {
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+
+  .place-order-btn {
+    padding: 10px;
+    font-size: 12px;
+  }
+}
+
+/* Extra small screens (480px and below) */
+@media (max-width: 480px) {
+  .place-order {
+    gap: 20px;
+    padding: 0 12px;
+    margin: 50px 0;
+  }
+
+  .place-order-left .title {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .place-order-left form {
+    gap: 10px;
+  }
+
+  .place-order-left form input {
+    padding: 8px;
+    font-size: 11px;
+  }
+
+  .place-order-right .cart-total {
+    padding: 12px;
+    gap: 10px;
+  }
+
+  .place-order-right .cart-total h2 {
+    font-size: 16px;
+  }
+
+  .place-order-right .cart-total-details {
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+
+  .place-order-btn {
+    padding: 8px;
+    font-size: 11px;
+  }
+}
